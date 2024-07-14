@@ -59,21 +59,47 @@ console.log(num3 === num4); // false
 // Logic operators
 /* Task 11: Write a program that uses the && operator to combine two consditions and log the result to the console */
 
-console.log(num1 > num2 && num1 < num3); // true
+console.log("Task 11:",num1 > num2 && num1 < num3); // false
 
 /* Task 12: Write a program that uses the || operator to combine two consditions and log the result to the console */
 
-console.log(num1 > num2 || num1 < num3); // true
+console.log("Task 12:", num1 > num2 || num1 < num3); // true
 
 /* Task 13: Write a program that uses the ! operator to negate a consdition and log the result to the console */
 
-console.log(!num1 > num2); // false 
+console.log("Task 13:",!num1 > num2); // false 
 console.log(!num1 < num2); // true
 
 // Ternary Operators  
 /* Task 11: Write a program that uses the ternary operator to check if a number is positive or negative and log the result to the console */
 
 console.log(num1 > 5 ? "Positive" : "Negative"); // Positive
+
+/************* Question 1 *************/
+/* Write a script that performs basic srithmetic operations(addition, subtraction, multiplication, division, remainder) on two numbers and log the results. */
+
+let Number1 = 10;
+let Number2 = 5;
+console.log(Number1 + Number2); // 15
+console.log(Number1 - Number2); // 5
+console.log(Number1 * Number2); // 50
+console.log(Number1 / Number2); // 2
+console.log(Number1 % Number2); // 0
+
+/************* Question 2 *************/
+/* Create a script that compares two numbers using different comparision operators and combines conditions using logical operator, log the results. */
+
+console.log(Number1 > Number2 && Number2 < Number1) //true
+console.log(Number1 > Number2 || Number2 < Number1) //true
+console.log(Number1 > Number2 && Number2 < Number1 || Number1 > Number2 && Number2 < Number1) //true
+
+
+/************* Question 3 *************/
+/* Write a script that uses ternary operator to determine if a number is positive or negative and log the results. */
+
+console.log(Number1 < Number2 ? "Positive" : "Negative"); //  Negative
+
+
 
 
 
