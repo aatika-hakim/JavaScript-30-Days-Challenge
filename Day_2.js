@@ -70,7 +70,10 @@ console.log(num1 > num2 || num1 < num3); // true
 console.log(!num1 > num2); // false 
 console.log(!num1 < num2); // true
 
+// Ternary Operators  
+/* Task 11: Write a program that uses the ternary operator to check if a number is positive or negative and log the result to the console */
 
+console.log(num1 > 5 ? "Positive" : "Negative"); // Positive
 
 
 
