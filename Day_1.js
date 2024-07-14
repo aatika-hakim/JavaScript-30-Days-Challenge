@@ -1,21 +1,26 @@
 /* ========== Variables & Datatypes ========== */
 
-/* Task 1 */
+// Activity 1: Variable Declaration
+
+/* Task 1:  declare a variable using var, assign it a number and log the value to the console*/
 
 var num = 5;
 console.log(num);
 
-/* Task 2 */
+/* Task 2: declare a variable using let, assign it a string and log the value to the console*/
 let str = "Hello World";
 console.log(str);
 
+// Activity 2: Constant Declaration
 
-/* Task 3 */
+/* Task 3: declare a variable using const, assign it a boolean value, and log the value to to the console*/
 const bool = true;
 console.log(bool);
 
 
 /*
+Activity 3: Data Types
+
 Task 4: create variables of different types(number, boolean, string, object, array) and log each variable's type using typeof operator 
 */
 
@@ -40,7 +45,8 @@ let array = [10, 20, 30, 40, 50];
 console.log(typeof array);
 
 
-/*
+/* Activity 4: Reassigning Varaiables
+
 Task 5: Declare a variable using let, assign it an initial value, reassign a new value, and log both values to console.
 */
 
@@ -50,7 +56,8 @@ console.log(river);
 river = "Nile";
 console.log(river);
 
-/*
+/* Activity 5: Understanding const
+
 Task 6: Try reassigning a variable declared with const and observe the error
 */
 const River = "Ravi";
@@ -90,9 +97,6 @@ console.log(city); // Lahore
 let pet = "dog";
 pet = "cat";
 console.log(pet); // cat
-
-
-
 
 
 
