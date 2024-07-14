@@ -38,6 +38,24 @@ console.log(num); // 12
 num -= 10;
 console.log(num); // 2
 
+// Comparison Operators
+/* Task 8: Write a program to compare two numbers using > and <,  log the result to the console */
+
+console.log(num1 > num2); // false
+console.log(num1 < num2); // true
+
+/* Task 9: Write a program to compare two numbers using >= and <=,  log the result to the console */
+
+console.log(num1 >= num2); // false
+console.log(num1 <= num2); // true
+
+/* Task 10: Write a program to compare two numbers using == and ===,  log the result to the console */
+
+let num3 = 20;
+let num4 = "20";
+console.log(num3 == num4); // true
+console.log(num3 === num4); // false
+
 
 
 
