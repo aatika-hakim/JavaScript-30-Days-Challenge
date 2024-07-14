@@ -56,6 +56,20 @@ let num4 = "20";
 console.log(num3 == num4); // true
 console.log(num3 === num4); // false
 
+// Logic operators
+/* Task 11: Write a program that uses the && operator to combine two consditions and log the result to the console */
+
+console.log(num1 > num2 && num1 < num3); // true
+
+/* Task 12: Write a program that uses the || operator to combine two consditions and log the result to the console */
+
+console.log(num1 > num2 || num1 < num3); // true
+
+/* Task 13: Write a program that uses the ! operator to negate a consdition and log the result to the console */
+
+console.log(!num1 > num2); // false 
+console.log(!num1 < num2); // true
+
 
 
 
