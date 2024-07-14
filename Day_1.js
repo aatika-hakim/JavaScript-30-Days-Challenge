@@ -1,4 +1,4 @@
-/* ========== Variables & Datatypes ========== */
+/* =========== Variables & Datatypes =========== */
 
 // Activity 1: Variable Declaration
 
@@ -8,14 +8,16 @@ var num = 5;
 console.log(num);
 
 /* Task 2: declare a variable using let, assign it a string and log the value to the console*/
+
 let str = "Hello World";
 console.log(str);
 
 // Activity 2: Constant Declaration
 
 /* Task 3: declare a variable using const, assign it a boolean value, and log the value to to the console*/
-const bool = true;
-console.log(bool);
+
+const isBool = true;
+console.log(isBool);
 
 
 /*
