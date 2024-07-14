@@ -25,6 +25,20 @@ console.log(num2 / num1); // 2
 
 console.log(num2 % num1); // 0
 
+// Assignment Operators
+
+/* Task 6: Use the += operator to add a number to varaiable and log the result to the console */
+
+let num = 2;
+num += 10;
+console.log(num); // 12
+
+/* Task 7: Use the -= operator to add a number to varaiable and log the result to the console */
+
+num -= 10;
+console.log(num); // 2
+
+
 
 
 
