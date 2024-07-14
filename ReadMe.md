@@ -1,4 +1,4 @@
-### Day_1 Learning
+### Day 1 Achievements:
 
 - Declaring variables using var, let and const.
 - Understanding the different data types in JS.
