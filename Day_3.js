@@ -30,6 +30,43 @@ if (age >= 18) {
     console.log("The person is not eligible to vote");
 }
 
+/* Task 3: Write a program to find the largest of three numbers using nested if else statements. */
+let num1 = 2;
+let num2 = 3;
+let num3 = 5;
 
+if (num1 > num2 && num1 > num3) {
+    console.log("The largest number is " + num1);
+} else if (num2 > num1 && num2 > num3) {
+    console.log("The largest number is " + num2);
+} else {
+    console.log("The largest number is " + num3);
+}
+
+/* Task 4: Write a program that uses a switch case to determine the days of week based on a number(1-7) and log the result to the console. */
+let day = 5;
+switch (day) {
+    case 1:
+        console.log("Sunday");
+        break;
+    case 2:
+        console.log("Monday");
+        break;
+    case 3:
+        console.log("Tuesday");
+        break;
+    case 4:
+        console.log("Wednesday");
+        break;
+    case 5:
+        console.log("Thursday");
+        break;
+    case 6:
+        console.log("Friday");
+        break;
+    case 7:
+        console.log("Saturday");
+        break;
+}
 
 
