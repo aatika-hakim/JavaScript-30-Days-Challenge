@@ -1,4 +1,4 @@
-/********************** Operators *********************/
+/****************** Operators *****************/
 
 // Arithmetic Operators
 /* Task 1: Write a program to add two numbers and log the result to the console */
