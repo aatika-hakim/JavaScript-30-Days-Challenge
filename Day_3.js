@@ -26,8 +26,7 @@ let age = 18;
 
 if (age >= 18) {
     console.log("The person is eligible to vote");
-}
-else {
+} else {
     console.log("The person is not eligible to vote");
 }
 
