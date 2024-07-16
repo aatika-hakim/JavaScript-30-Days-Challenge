@@ -23,4 +23,24 @@ let i =5;
         console.log(i,"*", j, "=", i*j)
     }
 
+/* Task 3: Write a program to calculate the sum of numbers from 1 to 10 using while loop. */
 
+let num = 0;
+let sum = 0;
+
+while(num <= 10){
+    sum += num;
+    num++;
+}
+
+console.log("The sum of numbers from 1 to 10 =",sum)
+
+
+/* Task 4: Write a program to print numbers from 10 to 1 using while loop. */
+
+let numbers = 10;
+
+while(numbers >= 1){
+    console.log(numbers);
+    numbers--;
+    }
