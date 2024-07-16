@@ -44,3 +44,31 @@ while(numbers >= 1){
     console.log(numbers);
     numbers--;
     }
+
+    
+/* Task 5: Write a program to print numbers from 1 to 5 using do....while loop. */
+
+let number = 1;
+
+do{
+    console.log(number++);
+}
+while(number <= 5);
+
+
+/* Task 6: Write a program to calculate the factorial of a number using a do...while loop */
+
+let x = 15;
+let fact = 1; 
+
+do {
+    fact = fact * x;
+    x--; 
+} while (x > 0);
+
+console.log("The factorial of 15 is", fact);
+
+
+
+
+
