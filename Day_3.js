@@ -44,6 +44,7 @@ if (num1 > num2 && num1 > num3) {
 }
 
 /* Task 4: Write a program that uses a switch case to determine the days of week based on a number(1-7) and log the result to the console. */
+
 let day = 5;
 switch (day) {
     case 1:
@@ -115,4 +116,47 @@ if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
     console.log('Not a Leap Year');
 }
 
+/************ Question 1 ************/ 
 
+/* Write a script that checks if a number is positive, negative, or zero using if else statements and log the results to the console. */ 
+
+// solved: check task 1
+
+
+
+
+
+
+
+/************ Question 2 ************/
+
+/* Write a script that checks if a person is eligible to vote based on their age and log the results to the console. */
+
+// solved: check task 2
+
+
+
+
+
+
+
+
+
+/************ Question 3 ************/
+
+/* Write a script that uses a switch case to determine the day of week based on a number (1-7) and log the results to the console. */
+
+// solved: check task 4
+
+
+
+
+
+
+
+
+/************ Question 4 ************/
+
+/* Write a script that uses a switch case to assign a grade based on the score and log the results to the console. */
+
+// solved: check task 5
