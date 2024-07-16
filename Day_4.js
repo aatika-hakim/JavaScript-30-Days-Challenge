@@ -69,6 +69,25 @@ do {
 console.log("The factorial of 15 is", fact);
 
 
+/* Task 7: Write a programa to print this pattern using nested loops:
+        *
+        **
+        ***
+        ****
+        ***** 
+*/
 
+let rows = 5;
+
+// outer loop for each row
+for(let i = 0; i <= rows; i++){
+    let pattern = ' ';
+    
+    // inner loop to print star in each row
+    for(let j = 1; j <= i; j++){
+        pattern += '*';
+    }
+    console.log(pattern);
+}
 
 
