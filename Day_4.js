@@ -20,7 +20,7 @@ for(let count = 0; count <=10; count++){
 let i =5;
 
     for (let j = 0; j <= 10; j++){
-        console.log(i, " ", "*", " ", j, "=", " ", i*j)
+        console.log(i,"*", j, "=", i*j)
     }
 
 
