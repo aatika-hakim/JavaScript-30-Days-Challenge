@@ -46,5 +46,22 @@ function concatStrings(str1, str2){
 concatStrings("str", "ing");
 
 
+/* Task 5: Write an arrow function to calculate the sum of the two numbers and log the result to the console. */
+
+const Sum = (a, b) => console.log("Sum of", a, "and", b, "=", a + b);
+
+Sum(2, 6);
+
+
+/* Task 6:  Write an arrow function to check if a string contains a specific character and log the result to the console.*/
+
+const check_Char = (str, char) => console.log(str.includes(char) ? "Yes" : "No"); // ternary operator
+
+check_Char("Hello World","l");
+
+
+
+
+
 
 
