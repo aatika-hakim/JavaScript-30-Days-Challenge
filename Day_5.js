@@ -22,11 +22,28 @@ isEvenOrOdd(2); // The number is even
 
 /* Task 2: Write s function to calculate the square of a number and return the result.*/
 
-function calculateSquare(num){
+function calc_Square(num){
     console.log("The square of", num, "=", num * num);
 }
 
-calculateSquare(12);
+calc_Square(12);
+
+/* Task 3: Write a function expression to find the maximum of two numbers and log the result to the console. */
+
+function findMaximum(a, b) {
+    console.log( a > b ? a : b); // ternary operator
+}
+
+findMaximum(2,6);
+findMaximum(10,8);
+
+/* Task 4: Write a function expression to concatenate two strings and log the results to the console.*/
+
+function concatStrings(str1, str2){
+    console.log(str1 + str2);
+    }
+
+concatStrings("str", "ing");
 
 
 
