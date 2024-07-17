@@ -20,3 +20,6 @@
 - Use switch statements to handle multiple conditions.
 - Apply the ternary operator for concise condition checking.
 - Combining multiple conditions to solve more complex problems.
+
+### Day 4 Achievements:
+
