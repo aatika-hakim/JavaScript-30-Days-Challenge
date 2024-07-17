@@ -23,3 +23,8 @@
 
 ### Day 4 Achievements:
 
+- Understand and use for loops to iterate over a sequence of numbers.
+- Utilize while loops for iteration based on conditions.
+- Use do while loops to ensure the loop body is executed at leat once.
+- Implement nested loops to solve more complex problems.
+- Use break and continue statements to control the flow of loops.
