@@ -62,6 +62,7 @@ console.log(check_Char("Hello World","l"));
 
 
 
+
 /* Task 7: Write a function that takes two parameters and returns their product. Provide a default value for the second parameter.*/
 function product(a, b = 20){
     return a * b;
@@ -78,8 +79,30 @@ function greeting(name, age = 20) {
 greeting("Alif");
 
 
+/* Task 9: Write a higher-order function that takes a function and a number and calls the function that many times. */
 
+function higherOrderFunc(func, n) {
+    for (let i = 0; i < n; i++) {
+        func();
+    }
+}
 
+function callbackFunc() {
+    console.log("Hello!");
+}
+
+higherOrderFunc(callbackFunc, 5); // call the callbackfunc 5 times
+
+/* Task 10 :  Write a higher-order function that takes two functions and a value, applies the first function to the value , and then applies the second function to the result. */
+function higher_Order_func(func1, func2, value) {
+    return func1(func2(value));
+}
+
+const func1 = (x) => { return x + x; };
+const func2 = (x) => { return x / x; };
+const value = 3;
+
+console.log(higher_Order_func(func1, func2, value));
 
 
 
