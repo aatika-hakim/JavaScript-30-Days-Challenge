@@ -47,4 +47,42 @@ numberArray.unshift(0);
 console.log(numberArray); // updated array: [ 0, 2, 3, 4, 5 ]
 
 
+//************** 2. Array Methods(Intermediate) ***************//
+
+/* Task 7: Use the map method to add a new number to the end of the array where each number is doubled and log the new array. */
+
+// original array :[ 0, 2, 3, 4, 5 ]
+
+let newNumberArray = numberArray.map((number) => number * 2);
+console.log(newNumberArray); // [ 0, 4, 6, 8, 10]
+
+/* Task 8: Use the filter method to create a new array with only even numbers  and log the new array.  */ 
+
+let evenNumberArray = numberArray.filter((number) => number % 2 == 0);
+console.log(evenNumberArray); // [ 0, 4, 8 ]
+
+
+/* Task 9: Use the reduce method to calculate the sum of all numbers in the array and log the result. */
+
+// original array :[ 0, 2, 3, 4, 5 ]
+
+let sumOfNumbers = numberArray.reduce((acc, current) => acc + current);
+    console.log(sumOfNumbers); // 14
+
+
+// **************** 3. Array Iteration **************** //
+
+/* Task 10: Use a for loop to iterate over the array and log each element to the console. */
+
+let array = ["a", "b", "c", "e", "f"];
+
+for(let i = 0; i < array.length; i++){
+    console.log(array[i]);
+};
+
+/* Task 11: Use a forEach loop to iterate over the array and log each element to the console.*/ 
+
+array.forEach(element => {
+    console.log(element)
+});
 
