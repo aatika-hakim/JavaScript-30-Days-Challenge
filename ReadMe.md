@@ -38,3 +38,10 @@
 - Create and utilize higher order functions.
 - Apply functions to solve common problems and perfornm calculations.
 - Enhance the reuseability and organization of code using functions.
+
+## Day 6 Achievements:
+
+- Create and manipulate arrays using array methods **(push, pop, shift, unshift)**.
+- Transform and aggregate array data using **map**, **filter**, **reduce**.
+- Iterate over arrays using loops and iteration methods.
+- Understand and work with multidimensional arrays.
