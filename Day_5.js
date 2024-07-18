@@ -94,6 +94,7 @@ function callbackFunc() {
 higherOrderFunc(callbackFunc, 5); // call the callbackfunc 5 times
 
 /* Task 10 :  Write a higher-order function that takes two functions and a value, applies the first function to the value , and then applies the second function to the result. */
+
 function higher_Order_func(func1, func2, value) {
     return func1(func2(value));
 }
