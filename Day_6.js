@@ -86,3 +86,20 @@ array.forEach(element => {
     console.log(element)
 });
 
+
+// ****************  MultidimensionalArray **************** //
+
+/* Task 12: Create a two dimensional array (matrix) and log the array to the console. */
+
+let matrix = [
+    [1, 2, 3],
+    [4, 5, 6]
+];
+
+console.log(matrix.map(row => `[${row.join(', ')}]`).join('\n'));
+
+/* task 13: Access and log a specific element from the two-dimensional array. */
+
+console.log(matrix[0][1]); // 2    [0] is index of array & [1] index of element
+
+
