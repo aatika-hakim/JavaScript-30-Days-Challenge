@@ -81,6 +81,7 @@ library.books.forEach(book => {
 });
 
 /* Task 7: Add a method to the book object that uses the this keyword to return a string with the book's title and year. */
+
 book.getBookInfo = function () {
     return `${this.title} was written in ${this.year}.`;
     };
