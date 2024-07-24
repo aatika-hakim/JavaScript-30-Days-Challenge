@@ -46,3 +46,13 @@
 - Iterate over arrays using loops and iteration methods.
 - Understand and work with multidimensional arrays.
 
+## Day 7 Achievements:
+
+- Create and Manipulate objects with the properties and methods.
+- Undertand and use this keyword in object methods.
+- work with nested objects and arrays of objects.
+- Iterate over an object's properties using loops.
+- Use object destructuring to extract values from objects.
+- Use object methods to manipulate objects.
+
+
