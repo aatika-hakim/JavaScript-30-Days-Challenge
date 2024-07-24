@@ -51,4 +51,25 @@ let book = {
 // 2nd method:
     // let {title, author} = book;
     // console.log(`"${title}" by "${author}"`);
-    
+
+// ********  Spread Operator & rest Operators ******** //
+
+/* Task 5: Use the spread operator to create a new array that includes all the elements of an existing array plus additional elements and log the new array to the console. */
+
+let existingArray = [1, 2, 3, 4, 5];
+let newArray = [...existingArray, 6, 7, 8, 9, 10];
+
+console.log(newArray);
+
+/* Task 6: Use rest operator in a function to accept an arbitrary number of arguments sum them and return the result.*/
+
+
+function sum(...args) {
+    let sum = 0;
+    for (let i = 0; i < args.length; i++) {
+        sum += args[i];
+    }
+    return sum;
+}
+
+console.log(sum(1, 2, 3, 4, 5));
