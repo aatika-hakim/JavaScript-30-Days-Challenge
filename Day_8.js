@@ -105,6 +105,8 @@ console.log(Book.getBookInfo());
 
 /* Task 9: Create an object with computed property names based on variables and log the object to the console.*/
 
+// console.log(Book);
+
 let bookTitle = "JS";
 let bookAuthor = "David";
 
