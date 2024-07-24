@@ -107,9 +107,11 @@ console.log(Book.getBookInfo());
 
 let bookTitle = "JS";
 let bookAuthor = "David";
+
 let BookInfo = {
     [bookTitle]: bookAuthor,
     [bookAuthor]: bookTitle,
     };
-    console.log(BookInfo);
+
+console.log(BookInfo);
 
