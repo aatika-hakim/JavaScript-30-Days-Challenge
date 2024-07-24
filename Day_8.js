@@ -109,9 +109,10 @@ let bookTitle = "JS";
 let bookAuthor = "David";
 
 let BookInfo = {
-    [bookTitle]: bookAuthor,
-    [bookAuthor]: bookTitle,
+    [bookTitle]: bookTitle,
+    [bookAuthor]: bookAuthor,
     };
 
 console.log(BookInfo);
+
 
