@@ -82,11 +82,25 @@ library.books.forEach(book => {
 
 /* Task 7: Add a method to the book object that uses the this keyword to return a string with the book's title and year. */
 
-book.getBookInfo = function () {
-    return `${this.title} was written in ${this.year}.`;
-    };
-    console.log(book.getBookInfo());
+book.getInfo = function() {
+    return`${this.title} was written in ${this.year}`;
+};
 
-/* Task 8: Use a for...in loop to iterate over the properties of the */ 
+console.log(book.getInfo());
 
+/* Task 8: Use a for...in loop to iterate over the properties of the book object and log each property and its value.*/
 
+const Book = {
+    title: "Eloquent JavaScript",
+    author: "Marijn Haverbeke",
+    year: 2018,
+};
+
+for (let key in Book){
+    console.log(key, ":", Book[key]);
+}
+
+/* Task 9: Use object.keys and object.values methods to log all the keys and values of book object.*/
+
+console.log(Object.keys(Book));
+console.log(Object.values(Book));
