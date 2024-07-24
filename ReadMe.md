@@ -55,4 +55,10 @@
 - Use object destructuring to extract values from objects.
 - Use object methods to manipulate objects.
 
+## Day 8 Achievements:
 
+- Understand and use template literals for string interplotation and multi-line strings.
+- Apply destructuring to extract values from arrays and objects.
+- Utilize spread & rest operators for array manipulation and function arguments.
+- Define functions with default parameters.
+- Create objects using enhanced objects literals, including methds and computed property names.
