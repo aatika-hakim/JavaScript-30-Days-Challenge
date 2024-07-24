@@ -27,3 +27,28 @@ My Name is ${Name}.
 I am ${age} years old.
 `;
 console.log(multiLineString);
+
+// ****************  Destructuring **************** //
+
+/* Task 3: Use array destructuring to extract the first and second elements from an array of numbers and log the them to the console.*/
+
+let numberArray = [22, 45, 33, 49, 35];
+let elements = numberArray.slice(0, 2);
+
+console.log(elements);
+
+/* Task 4: Use object destructuring to extract the title and author from a book object and log them to the console. */
+
+let book = {
+    title: "JavaScript",
+    author: "David",
+    year: 2019
+    };
+// 1st method:
+    console.log(book.title);
+    console.log(book.author);
+
+// 2nd method:
+    // let {title, author} = book;
+    // console.log(`"${title}" by "${author}"`);
+    
