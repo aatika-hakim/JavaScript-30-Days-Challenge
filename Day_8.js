@@ -52,6 +52,8 @@ let book = {
     // let {title, author} = book;
     // console.log(`"${title}" by "${author}"`);
 
+
+
 // ********  Spread Operator & rest Operators ******** //
 
 /* Task 5: Use the spread operator to create a new array that includes all the elements of an existing array plus additional elements and log the new array to the console. */
@@ -73,3 +75,25 @@ function sum(...args) {
 }
 
 console.log(sum(1, 2, 3, 4, 5));
+
+
+
+// ********  Default Parameters ******** //
+
+/* Task 7: Write a function that takes two parameters and returns their product, with second parameter having default value of 1. Log the result  of calling this function with and without the second parameter.*/ 
+
+function product(a, b = 1){
+    return a * b;
+}
+
+console.log(product(3)); //without second parameter
+console.log(product(5, 9));  //with second parameter
+
+
+
+
+
+
+
+
+
