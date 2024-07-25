@@ -19,3 +19,21 @@ document.getElementById("task1").innerHTML = "'JAVASCRIPT' 30 DAYS CHALLANGE BY 
 
 document.getElementsByClassName("task2")[0].style.backgroundColor = "red";
 
+
+// ********  Creating & Appending Elements  ********** //
+
+/* Task 3:  Create a new div element with some text content and append it to the body.*/
+
+var newDiv = document.createElement("div");
+newDiv.innerHTML = "This is a new div element.";
+document.body.appendChild(newDiv);
+
+/* Task 4: Create a new li element and addit to an existing ul list. */
+
+var newLi = document.createElement("li");
+newLi.innerHTML = "New List";
+
+var ul = document.getElementById("task4");
+ul.appendChild(newLi);
+
+
