@@ -36,4 +36,13 @@ newLi.innerHTML = "New List";
 var ul = document.getElementById("task4");
 ul.appendChild(newLi);
 
+// ********  Removing Elements  ********** //
+
+/* Task 5: Select an element and remove it from DOM.*/
+
+document.getElementById("task5").remove();
+
+/* Task 6: Remove the last child of a specific HTML element. */
+
+ul.removeChild(ul.lastChild); // remove last child of ul
 
