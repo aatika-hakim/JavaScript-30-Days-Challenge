@@ -62,4 +62,16 @@ document.getElementById("task7").src = "https://images.pexels.com/photos/326055/
 document.getElementById("task7").classList.add("task8");
 document.getElementById("task7").classList.remove("task8"); // add and remove class from img tag
 
- 
+
+// ********  Event Handling  ********** //
+
+/*Task 9: Add  click event listener to a button that changes the text content of a paragraph.*/
+document.getElementById("btn").addEventListener("click", function() {
+    document.getElementById("task9").innerHTML = "You clicked the button!"
+}); // add click event listener to button
+
+
+/*Task 10: Add a mouseover event listener to an element that changes its border color.*/
+document.getElementById("task_10").addEventListener("mouseover", function() {
+    document.getElementById("task_10").style.border = "4px solid blue";
+}); // add mouseover event listener to div
