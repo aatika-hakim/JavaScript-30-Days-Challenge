@@ -2,12 +2,15 @@
 
 /* 
 Activities:
+
 1. Selecting & Manipulating Elements
 2. Creating & Appending Elements
 3. Removing Elements
 4. Modifying Attributes and classes
 5. Event Handling
+
 */
+
 
 // ********  Selecting & Manipulating Elements  ********** //
 
@@ -28,6 +31,7 @@ document.getElementsByClassName("task2")[0].style.backgroundColor = "red";
 var newDiv = document.createElement("div");
 newDiv.innerHTML = "This is a new div element.";
 document.body.appendChild(newDiv);
+
 
 /* Task 4: Create a new li element and addit to an existing ul list. */
 
@@ -59,8 +63,8 @@ document.getElementById("task7").src = "https://images.pexels.com/photos/326055/
 
 /* Task 8: Add and remove a CSS class to/from an HTML element. */
 
-document.getElementById("task7").classList.add("task8");
-document.getElementById("task7").classList.remove("task8"); // add and remove class from img tag
+document.getElementsByTagName("img").classList.add("task8");
+document.getElementsByTagName("img").classList.remove("task8"); // add and remove class from img tag
 
 
 // ********  Event Handling  ********** //
@@ -74,4 +78,4 @@ document.getElementById("btn").addEventListener("click", function() {
 /*Task 10: Add a mouseover event listener to an element that changes its border color.*/
 document.getElementById("task_10").addEventListener("mouseover", function() {
     document.getElementById("task_10").style.border = "4px solid blue";
-}); // add mouseover event listener to div
+}); 
