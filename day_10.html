@@ -15,6 +15,7 @@
         body {
             font-family: cursive;
             font-size: large;
+            display: block;
         }
 
         button {
@@ -22,6 +23,7 @@
             border: none;
             background-color: #000;
             color: #fff;
+            cursor: pointer;
             border-radius: 2px;
             margin-bottom: 15px;
         }
@@ -36,11 +38,12 @@
         <button>Task 1</button>
     </div>
     <div id="task2">
+        <button onclick="show()">Hide Img</button>
         <img 
             id="img"
             src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="img" 
-            style="width: 200px; height: 200;" />
+            style="width: 200px; height: 200; visibility: visible;"/>
     </div>
 
     <script src="Day_10.js"></script>
