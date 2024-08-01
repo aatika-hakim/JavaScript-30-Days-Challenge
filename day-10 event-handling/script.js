@@ -18,3 +18,14 @@ const colorBox = document.getElementById('colorBox');
     colorBox.onmouseover = () => colorBox.style.backgroundColor = 'blue';
     // task 4
     colorBox.onmouseout = () => colorBox.style.backgroundColor = 'lightblue';
+
+
+// Activity 3: Keyboard Events
+// Task 5: Add a keydown event listener to an input field that logs the form data to the console
+document.addEventListener('DOMContentLoaded', () => {
+    const input = document.getElementById('myInput');
+    input.addEventListener('keydown', () => {
+        const formData = new FormData(document.getElementById('myForm'));
+        console.log(Object.fromEntries(formData));
+    });
+});
