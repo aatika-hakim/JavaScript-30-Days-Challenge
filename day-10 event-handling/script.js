@@ -29,3 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log(Object.fromEntries(formData));
     });
 });
+
+// Task 6:
+
