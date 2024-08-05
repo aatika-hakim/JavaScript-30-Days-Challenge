@@ -32,3 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Task 6:
 
+// Task 7:
+
+// Task 8:
