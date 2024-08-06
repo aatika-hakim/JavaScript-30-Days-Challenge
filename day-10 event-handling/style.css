@@ -1,5 +1,5 @@
 * {
-    padding: 0;
+    padding: 10px;
     margin: 0;
     box-sizing: border-box;
     font-family: cursive;
@@ -13,7 +13,8 @@
 
 
 div{
-    margin-top: 20px;
+    margin: 20px;
+    width: 600px;
 }
 
 #toggleImage {
@@ -76,4 +77,34 @@ input[type="submit"]:hover {
 
 #change-txt-btn:hover {
     background-color: #45a049;
+}
+
+ select, button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    background-color: #eef;
+    padding: 10px;
+    border: 1px solid #ccd;
+    border-radius: 4px;
+    margin: 5px 0;
+    cursor: pointer;
+    width: 200px;
+}
+#parentElement > div.dynamicItem {
+    background-color: #f0f0f5;
+    padding: 10px;
+    border: 1px solid #ccd;
+    border-radius: 4px;
+    margin: 5px 0;
 }
