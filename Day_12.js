@@ -15,6 +15,22 @@ function task1() {
 
 // Task 2: Create a function that divides two numbers and throws an error if the denominator is zero. Use a try-catch block lock to handle this error.
 
+function divideNumbers(numerator, denominator) {
+    try {
+        if (denominator === 0) {
+            throw new Error("Denominator cannot be zero.");
+        }
+        const result = numerator / denominator;
+        return result;
+    } catch (error) {
+        console.error(error.message);
+        return null; 
+    }
+}
+
+console.log(divideNumbers(10, 2)); // 5
+console.log(divideNumbers(10, 0)); 
+
 
 //* Activity 2: Finally Block
 
