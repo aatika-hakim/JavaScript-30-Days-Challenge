@@ -36,6 +36,15 @@ console.log(divideNumbers(10, 0));
 
 // Task 3: Write a script that includes a try catch block and a finally block. Log messages in the try, catch, and finally blocks to observe the execution flow.
 
+try{
+    console.log("try block")
+}
+catch(error){console.log("catch block")}
+finally{
+    console.log("finally")
+}
+
+
 //* Activity 3: Custom Error Objects
 // Task 4: Create a custom error class that extends the built-in Error class. Throw an instance of this custom error in a function and handle it using a try-catch block.
 // Task 5: Write a function that validates user input (e.g., checking if a string is not empty) and throws a custom error if the validation fails. Handle the custom error using a try-catch block.
