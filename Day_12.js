@@ -46,7 +46,12 @@ finally{
 
 
 //* Activity 3: Custom Error Objects
-// Task 4: Create a custom error class that extends the built-in Error class. Throw an instance of this custom error in a function and handle it using a try-catch block.
+
+// Task 4: Create a custom error class that extends the built-in Error class. Throw an instance of this custom error in a function and handle it using a try-catch block.e.error(error.message);
+
+
+
+
 // Task 5: Write a function that validates user input (e.g., checking if a string is not empty) and throws a custom error if the validation fails. Handle the custom error using a try-catch block.
 
 
