@@ -64,9 +64,12 @@ console.log(student.getStudentId());
 // Task 4
 console.log(student.greeting());
 
+
 //* Activity 3: Static Methods and Properties
 
 // Task 5: Add a static method to the Person class that returns a generic greeting message. Call this static method without creating an Instance of the class and log the message.
+
+
 
 // Task 6: Add a static property to the Student class to keep track of the number of students created. Increment this property in the constructor and log the total number of students.
 
