@@ -71,6 +71,7 @@ console.log(student.greeting());
 
 
 
+
 // Task 6: Add a static property to the Student class to keep track of the number of students created. Increment this property in the constructor and log the total number of students.
 
 
