@@ -1,67 +1,44 @@
 //* Day 14: Classes
 
-//* Activity 1: Class Definition
-// Task 1: Define a class Person with properties name and age, and a method to return a greeting message. Create an instance of the class and log the greeting message.
-// Task 2: Add a method to the Person class that updates the age property and logs the updated age.
 class Person {
-    constructor(name, age) {
-        this.name = name;
+    constructor(firstName, lastName, age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.age = age;
     }
-    
-    greeting() {
-        return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+
+    static greet() {
+        return "Hello, world!";
     }
-    
-    updateAge(newAge) {
-        this.age = newAge;
-        console.log(`Updated age is ${this.age}`);
+
+    get fullName() {
+        return `${this.firstName} ${this.lastName}`;
+    }
+
+    set fullName(name) {
+        [this.firstName, this.lastName] = name.split(' ');
     }
 }
 
-// instance of class
-let person = new Person('Lily', 20);
-
-console.log(person.greeting()); 
-
-// Update the age
-person.updateAge(21); 
-
-console.log("Updated:", person.greeting()); 
-
-
-//* Activity 2: Class Inheritance
-
-// Task 3: Define a class Student that extends the Person class. Add a property studentId and a method to return the student ID. Create an instance of the Student class and log the student ID.
 class Student extends Person {
-    constructor(name, age, studentId) {
-        // Call the parent class constructor
-        super(name, age);
-        this.studentId = studentId;
-    }
-    
-    // Method to return the student ID
-    getStudentId() {
-        return `Student ID: ${this.studentId}`;
+    static studentCount = 0;
+
+    constructor(firstName, lastName, age, major) {
+        super(firstName, lastName, age);
+        this.major = major;
+        Student.studentCount++;
     }
 
-//  Task 4: Override the greeting method in the Student class to include the student ID in the message. Log the overridden greeting message.
-
-       // Override the greeting method to include the student ID
-        greeting() {
-        // Call the parent class greeting method
-        let parent_Greeting = super.greeting();
-        // Append the student ID to the greeting message
-        return `${parent_Greeting} My student ID is ${this.studentId}.`;
+    greeting() {
+        return `Hello, my name is ${this.fullName} and I am a ${this.major} major.`;
     }
 }
 
-// Create an instance of the Student class
-let student = new Student('LILY', 21, 'S-12345');
-
-console.log(student.getStudentId());
-
-// Task 4
+let student = new Student("hello", "world", 20, "Computer Science");
+console.log(student.greeting());
+console.log(Student.studentCount);
+console.log(Person.greet());
+student.fullName = "hello world";
 console.log(student.greeting());
 
 
@@ -69,8 +46,23 @@ console.log(student.greeting());
 
 // Task 5: Add a static method to the Person class that returns a generic greeting message. Call this static method without creating an Instance of the class and log the message.
 
+// class Person {
+//     constructor(firstName, lastName, age) {
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.age = age;
+//     }
 
+//     static greet() {
+//         return "Hello, world!";
+//     }
 
+//     static genericGreeting() {
+//         return "Hello, everyone!";
+//     }
+// }
+
+// console.log(Person.genericGreeting()); //Hello, everyone!
 
 // Task 6: Add a static property to the Student class to keep track of the number of students created. Increment this property in the constructor and log the total number of students.
 
@@ -78,12 +70,121 @@ console.log(student.greeting());
 //* Activity 4: Getters and Setters
 
 // Task 7: Add a getter method to the Person class to return the full name (assume a firstheme and lastName property). Create an instance and log the full name using the getter. 
+class Person {
+    constructor(firstName, lastName, age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+    }
 
-// Task 8: Add a setter method to the Person class to update the name properties (firstflame and lastlame). Update the name using the setter and log the updated full name.
+    static greet() {
+        return "Hello, world!";
+    }
+
+    get fullName() {
+        return `${this.firstName} ${this.lastName}`;
+    }
+
+    set fullName(name) {
+        [this.firstName, this.lastName] = name.split(' ');
+    }
+}
+
+class Student extends Person {
+    static studentCount = 0;
+
+    constructor(firstName, lastName, age, major) {
+        super(firstName, lastName, age);
+        this.major = major;
+        Student.studentCount++; // Increment the studentCount
+    }
+
+    greeting() {
+        return `Hello, my name is ${this.fullName} and I am a ${this.major} major.`;
+    }
+}
+
+let student1 = new Student("John", "Doe", 20, "Computer Science");
+let student2 = new Student("Jane", "Doe", 21, "Mathematics");
+let student3 = new Student("Bob", "Smith", 22, "Physics");
+
+console.log(Student.studentCount);
+
+// Task 8, 9 , 10
+class Person {
+    constructor(firstName, lastName, age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+    }
+
+    static greet() {
+        return "Hello, world!";
+    }
+
+    get fullName() {
+        return `${this.firstName} ${this.lastName}`;
+    }
+
+    set fullName(name) {
+        [this.firstName, this.lastName] = name.split(' ');
+    }
+}
+
+class Student extends Person {
+    static studentCount = 0;
+
+    constructor(firstName, lastName, age, major) {
+        super(firstName, lastName, age);
+        this.major = major;
+        Student.studentCount++;
+    }
+
+    greeting() {
+        return `Hello, my name is ${this.fullName} and I am a ${this.major} major.`;
+    }
+}
+
+let student = new Student("java", "script", 20, "Computer Science");
+console.log(student.fullName);
+
+student.fullName = "Java Script";
+console.log(student.fullName); 
 
 
-//* Activity 5: Private Fields (Optional)
+class Account {
+balance = 0;
 
-// Task 9: Define a class Account with private fields for balance and a method to deposit and withdraw money. Ensure that the balance can only be updated through these methods.
+    constructor(initialBalance) {
+        this.balance = initialBalance;
+    }
 
-// Task 10: Create an instance of the Account class and test the deposit and withdraw methods, logging the balance after each operation.
+    deposit(amount) {
+        if (amount > 0) {
+            this.balance += amount;
+        } else {
+            console.log("Invalid deposit amount");
+        }
+    }
+
+    withdraw(amount) {
+        if (amount > 0 && amount <= this.balance) {
+            this.balance -= amount;
+        } else {
+            console.log("Invalid withdrawal amount");
+        }
+    }
+
+    getBalance() {
+        return this.balance;
+    }
+}
+
+let account = new Account(1000);
+console.log(account.getBalance()); // 1000
+
+account.deposit(500);
+console.log(account.getBalance()); // 1500
+
+account.withdraw(200);
+console.log(account.getBalance()); // 1300
