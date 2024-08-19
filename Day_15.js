@@ -87,3 +87,34 @@ for (let i = 0; i < 5; i++) {
 // Call each function to see the result
 functions.forEach(fn => fn()); // 0, 1, 2, 3, 4
 
+
+
+//  Task 6
+// Module Pattern Script
+function createItemManager() {
+    const items = [];
+    
+    return {
+        addItem: function(item) {
+            items.push(item);
+        },
+        removeItem: function(item) {
+            const index = items.indexOf(item);
+            if (index > -1) {
+                items.splice(index, 1);
+            }
+        },
+        listItems: function() {
+            return items.slice(); // Return a copy of the items array
+        }
+    };
+}
+
+const manager = createItemManager();
+manager.addItem('Apple');
+manager.addItem('Banana');
+console.log(manager.listItems()); // ['Apple', 'Banana']
+manager.removeItem('Apple');
+console.log(manager.listItems()); // ['Banana']
+
+
