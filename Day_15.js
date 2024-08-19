@@ -117,4 +117,32 @@ console.log(manager.listItems()); // ['Apple', 'Banana']
 manager.removeItem('Apple');
 console.log(manager.listItems()); // ['Banana']
 
+// Task 7
+
+// Memoization Script
+function memoize(fn) {
+    const cache = new Map();
+    
+    return function(...args) {
+        const key = JSON.stringify(args);
+        if (cache.has(key)) {
+            return cache.get(key);
+        }
+        const result = fn(...args);
+        cache.set(key, result);
+        return result;
+    };
+}
+
+function slowFunction(x) {
+    // Simulating a slow computation
+    for (let i = 0; i < 1e6; i++) {}
+    return x * 2;
+}
+
+// Create a memoized version
+const memoizedSlowFunction = memoize(slowFunction);
+
+console.log(memoizedSlowFunction(10)); //20
+console.log(memoizedSlowFunction(10)); // 20 (from cache)
 
