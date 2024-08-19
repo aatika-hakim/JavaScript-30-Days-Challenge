@@ -62,7 +62,7 @@ console.log(generateUniqueId()); // id_1
 console.log(generateUniqueId()); // id_2
 
 
-// TAsk 5
+// TAsk 4
 // Greeting Closure Script
 function createGreeting(name) {
     return function() {
@@ -73,4 +73,17 @@ function createGreeting(name) {
 const greetJohn = createGreeting('ali');
 greetJohn(); // Hello, ali!
 
+
+//  Task 5
+// Loop Closure Script
+const functions = [];
+
+for (let i = 0; i < 5; i++) {
+    functions.push(function() {
+        console.log(i);
+    });
+}
+
+// Call each function to see the result
+functions.forEach(fn => fn()); // 0, 1, 2, 3, 4
 
