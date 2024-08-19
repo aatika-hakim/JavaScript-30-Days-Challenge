@@ -46,4 +46,18 @@ console.log(counter.getValue()); // 1
 counter.increment();
 console.log(counter.getValue()); // 2
 
+// TAsk 3
+// Unique ID Generator Script
+function createUniqueIdGenerator() {
+    let lastId = 0;
+    
+    return function() {
+        lastId++;
+        return `id_${lastId}`;
+    };
+}
+
+const generateUniqueId = createUniqueIdGenerator();
+console.log(generateUniqueId()); // Logs: id_1
+console.log(generateUniqueId()); // Logs: id_2
 
