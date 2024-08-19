@@ -146,3 +146,31 @@ const memoizedSlowFunction = memoize(slowFunction);
 console.log(memoizedSlowFunction(10)); //20
 console.log(memoizedSlowFunction(10)); // 20 (from cache)
 
+// Task 8
+// Factorial Function with Memoization
+function factorial(n) {
+    if (n === 0) return 1;
+    return n * factorial(n - 1);
+}
+
+// Memoization Function
+function memoize(fn) {
+    const cache = new Map();
+    
+    return function(...args) {
+        const key = JSON.stringify(args);
+        if (cache.has(key)) {
+            return cache.get(key);
+        }
+        const result = fn(...args);
+        cache.set(key, result);
+        return result;
+    };
+}
+
+// Create a memoized version of factorial
+const memoizedFactorial = memoize(factorial);
+
+console.log(memoizedFactorial(5)); // 120
+console.log(memoizedFactorial(5)); // 120 (from cache)
+console.log(memoizedFactorial(6)); // 720
