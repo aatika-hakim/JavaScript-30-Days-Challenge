@@ -58,6 +58,19 @@ function createUniqueIdGenerator() {
 }
 
 const generateUniqueId = createUniqueIdGenerator();
-console.log(generateUniqueId()); // Logs: id_1
-console.log(generateUniqueId()); // Logs: id_2
+console.log(generateUniqueId()); // id_1
+console.log(generateUniqueId()); // id_2
+
+
+// TAsk 5
+// Greeting Closure Script
+function createGreeting(name) {
+    return function() {
+        console.log(`Hello, ${name}!`);
+    };
+}
+
+const greetJohn = createGreeting('ali');
+greetJohn(); // Hello, ali!
+
 
