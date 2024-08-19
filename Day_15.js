@@ -8,4 +8,21 @@
 5. Memorization
 */
 
+// Task 1
+
+// Basic Closure Script
+function outerFunction() {
+    let outerVariable = 'Hello from outer function!';
+    
+    function innerFunction() {
+        console.log(outerVariable);
+    }
+    
+    return innerFunction;
+}
+
+const inner = outerFunction();
+inner(); 
+
+// task 2
 
