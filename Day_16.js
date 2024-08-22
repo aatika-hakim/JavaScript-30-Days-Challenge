@@ -32,7 +32,18 @@ function sumArray(arr) {
     }
 }
 console.log(sumArray([1, 2, 3, 4, 5]));
+
 // Task 4: Write a recursive function to find the maximum element in an array. Log the result for a few test cases.
+function maxArray(arr) {
+    if (arr.length === 1) {
+        return arr[0];
+    } else {
+        let max = maxArray(arr.slice(1));
+        return arr[0] > max ? arr[0] : max;
+    }
+}
+console.log(maxArray([1, 2, 3, 4, 5]));
+
 // Activity 3: String Manipulation with Recursion
 // Task 5: Write a recursive function to reverse a string. Log the result for a few test cases.
 // Task 6: Write a recursive function to check if a string is a palindrome. Log the result for a few test cases.
