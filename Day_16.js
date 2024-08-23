@@ -8,5 +8,10 @@ console.log(factorial(5)); //120
 console.log(factorial(10)); //3628800
 
 
+// Task 2: Write a recursive function to calculate the Fibonacci number. Log the result for a few test cases.
+const fibonacci = n => (n <= 1 ? n : fibonacci(n - 1) + fibonacci(n - 2));
+
+console.log(fibonacci(10)); //55
+
 
 
