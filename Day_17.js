@@ -11,6 +11,48 @@ class Node {
 }
 // Task 2: Implement a LinkedList class with methods to add a node to the end, remove a node from the end, and display all nodes.
 
+class LinkedList {
+    constructor() {
+        this.head = null;
+    }
+
+    addToEnd(value) {
+        let newNode = new Node(value), current = this.head;
+        if (!current) this.head = newNode;
+        else {
+            while (current.next) current = current.next;
+            current.next = newNode;
+        }
+    }
+
+    removeFromEnd() {
+        if (!this.head) return console.log("The list is empty.");
+        if (!this.head.next) return this.head = null;
+        let current = this.head;
+        while (current.next.next) current = current.next;
+        current.next = null;
+    }
+
+    display() {
+        let nodes = [], current = this.head;
+        while (current) nodes.push(current.value), current = current.next;
+        console.log(nodes.length ? nodes.join(" - ") : "empty list");
+    }
+}
+
+const list = new LinkedList();
+list.addToEnd(10);
+list.addToEnd(20);
+list.addToEnd(30);
+
+list.display();
+
+list.removeFromEnd();
+list.display();
+
+console.log(list) 
+
+
 // Activity 2: Stack
 // Task 3: Implement a Stack class with methods push (add element), pop (remove element), and peek (view the top element).
 // Task 4: Use the Stack class to reverse a string by pushing all characters onto the stack and then popping them off.
