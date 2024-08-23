@@ -15,3 +15,10 @@ console.log(fibonacci(10)); //55
 
 
 
+// Activity 2: Recursion with Arrays
+// Task 3: Write a recursive function to find the sum of all elements in an array. Log the result for a few test cases. 
+const sumArray = arr => (arr.length === 0 ? 0 : arr[0] + sumArray(arr.slice(1)));
+
+console.log(sumArray([1, 2, 3, 4, 5])); // 15
+
+
