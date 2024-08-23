@@ -28,4 +28,9 @@ const maxArray = arr => (arr.length === 1 ? arr[0] : Math.max(arr[0], maxArray(a
 console.log(maxArray([1, 2, 3, 4, 5])); // 5
 
 
+// Activity 3: String Manipulation with Recursion
+// Task 5: Write a recursive function to reverse a string. Log the result for a few test cases.
+const reverseString = str => (str === "" ? "" : reverseString(str.slice(1)) + str[0]);
+
+console.log(reverseString("hello")); // "olleh"
 
