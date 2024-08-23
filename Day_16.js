@@ -22,3 +22,10 @@ const sumArray = arr => (arr.length === 0 ? 0 : arr[0] + sumArray(arr.slice(1)))
 console.log(sumArray([1, 2, 3, 4, 5])); // 15
 
 
+// Task 4: Write a recursive function to find the maximum element in an array. Log the result for a few test cases.
+const maxArray = arr => (arr.length === 1 ? arr[0] : Math.max(arr[0], maxArray(arr.slice(1))));
+
+console.log(maxArray([1, 2, 3, 4, 5])); // 5
+
+
+
