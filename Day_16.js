@@ -47,4 +47,15 @@ console.log(isPalindrome("A man, a plan, a canal, Panama")); // true
 console.log(isPalindrome("hello")); // false
 
 
+// Activity 4: Recursive Search
+// Task 7: Write a recursive function to perform a binary search on a sorted array. Log the index of the target element for a few test cases.
+const binarySearch = (arr, target, low = 0, high = arr.length - 1) => {
+    if (low > high) return -1;
+    const mid = Math.floor((low + high) / 2);
+    return arr[mid] === target ? mid : arr[mid] < target ? binarySearch(arr, target, mid + 1, high) : binarySearch(arr, target, low, mid - 1);
+};
+
+console.log(binarySearch([1, 2, 3, 4, 5], 4)); // 3
+console.log(binarySearch([1, 2, 3, 4, 5], 6)); // -1
+
 
