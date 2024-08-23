@@ -50,11 +50,38 @@ list.display();
 list.removeFromEnd();
 list.display();
 
-console.log(list) 
+console.log(list)
 
 
 // Activity 2: Stack
 // Task 3: Implement a Stack class with methods push (add element), pop (remove element), and peek (view the top element).
+class Stack {
+    constructor() {
+        this.items = [];
+    }
+    push(item) {
+        this.items.push(item);
+    }
+    pop() {
+        if (this.items.length === 0) return console.log("The stack is empty.");
+        return this.items.pop();
+    }
+    peek() {
+        if (this.items.length === 0) return console.log("The stack is empty.");
+        return this.items[this.items.length - 1];
+    }
+}
+
+const stack = new Stack();
+console.log("Original:",stack)
+stack.push(10);
+stack.push(20);
+stack.push(30);
+console.log(stack.peek());
+// console.log(stack.pop());
+console.log("New Stack",stack)
+
+
 // Task 4: Use the Stack class to reverse a string by pushing all characters onto the stack and then popping them off.
 
 // Activity 3: Queue
