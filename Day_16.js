@@ -58,4 +58,9 @@ const binarySearch = (arr, target, low = 0, high = arr.length - 1) => {
 console.log(binarySearch([1, 2, 3, 4, 5], 4)); // 3
 console.log(binarySearch([1, 2, 3, 4, 5], 6)); // -1
 
+// Task 8: Write a recursive function to count the occurrences of a target element in an array. Log the result for a few test cases.
+const countOccurrences = (arr, target) => arr.length === 0 ? 0 : (arr[0] === target ? 1 : 0) + countOccurrences(arr.slice(1), target);
+
+console.log(countOccurrences([1, 2, 3, 2, 2, 4], 2)); // 3
+
 
