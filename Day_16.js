@@ -64,3 +64,28 @@ const countOccurrences = (arr, target) => arr.length === 0 ? 0 : (arr[0] === tar
 console.log(countOccurrences([1, 2, 3, 2, 2, 4], 2)); // 3
 
 
+// Activity 5: Tree Traversal (Optional)
+// Task 9: Write a recursive function to perform an in-order traversal of a binary tree. Log the nodes as they are visited. 
+class TreeNode {
+    constructor(value, left = null, right = null) {
+        this.value = value;
+        this.left = left;
+        this.right = right;
+    }
+}
+
+const inOrderTraversal = node => {
+    if (node) {
+        inOrderTraversal(node.left);
+        console.log(node.value);
+        inOrderTraversal(node.right);
+    }
+};
+
+const root = new TreeNode(4, new TreeNode(2, new TreeNode(1), new TreeNode(3)), new TreeNode(6, new TreeNode(5), new TreeNode(7)));
+inOrderTraversal(root); // 1 2 3 4 5 6 7
+
+// Task 10: Write a recursive function to calculate the depth of a binary tree. Log the result for a few test cases.
+const treeDepth = node => node ? Math.max(treeDepth(node.left), treeDepth(node.right)) + 1 : 0;
+
+console.log(treeDepth(root)); // 3
