@@ -2,13 +2,14 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 from urllib.parse import urljoin
+import os
 
 # Function to get email from a website URL
 def get_emails_from_url(url):
     try:
         print(f"Fetching {url}...")
         # Request the website content
-        response = requests.get(url, timeout=10)
+        response = requests.get(url, timeout=100)
         soup = BeautifulSoup(response.content, 'html.parser')
         
         # Search for email in the page
@@ -48,18 +49,25 @@ def get_emails_from_url(url):
 # Function to save results to an Excel file
 def save_to_excel(data, file_name='output.xlsx'):
     df = pd.DataFrame(data, columns=['Website', 'Email'])
+    # Save file to the current working directory
     df.to_excel(file_name, index=False)
-    print(f"Results saved to {file_name}")
+    # Print the absolute path where the file is saved
+    print(f"Results saved to: {os.path.abspath(file_name)}")
 
 # List of URLs to scrape emails from
 urls = [
-   "https://www.apple.com/",
-"https://www.microsoft.com/"
-"https://www.spotify.com/"
-"https://www.airbnb.com/"
-"https://www.tesla.com/"
-"https://www.jackinthebox.com/"
+    "https://www.laurenconrad.com/",
+    "https://www.neilpatel.com/",
+    "https://www.unicef.org/",
+    "https://www.habitat.org/",
+    "https://www.harvard.edu/",
+    "https://www.stanford.edu/",
+    "https://www.lacity.org/",
+    "https://www.nyc.gov/",
+    "https://www.brooklynbrewery.com/",
+    "https://www.bluebottlecoffee.com/"
 ]
+
 
 # Store the results in a list
 results = []
