@@ -9,7 +9,7 @@ def get_emails_from_url(url):
     try:
         print(f"Fetching {url}...")
         # Request the website content
-        response = requests.get(url, timeout=100)
+        response = requests.get(url)
         soup = BeautifulSoup(response.content, 'html.parser')
         
         # Search for email in the page
@@ -56,17 +56,11 @@ def save_to_excel(data, file_name='output.xlsx'):
 
 # List of URLs to scrape emails from
 urls = [
-    "https://www.laurenconrad.com/",
-    "https://www.neilpatel.com/",
-    "https://www.unicef.org/",
-    "https://www.habitat.org/",
-    "https://www.harvard.edu/",
-    "https://www.stanford.edu/",
-    "https://www.lacity.org/",
-    "https://www.nyc.gov/",
-    "https://www.brooklynbrewery.com/",
-    "https://www.bluebottlecoffee.com/"
+        "https://www.nonprofitexample.org",  # Example of a non-profit website
+    "https://www.scholarlyblog.edu",  # Example of an educational blog
+    "https://www.photographerportfolio.com",
 ]
+
 
 
 # Store the results in a list
