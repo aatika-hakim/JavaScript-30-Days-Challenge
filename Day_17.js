@@ -301,17 +301,17 @@ class Graph {
     }
 }
 
-const graph = new Graph();
-graph.addVertex("A");
-graph.addVertex("B");
-graph.addVertex("C");
-graph.addVertex("D");
-graph.addEdge("A", "B");
-graph.addEdge("A", "C");
-graph.addEdge("B", "D");
+const graphs = new Graph();
+graphs.addVertex("A");
+graphs.addVertex("B");
+graphs.addVertex("C");
+graphs.addVertex("D");
+graphs.addEdge("A", "B");
+graphs.addEdge("A", "C");
+graphs.addEdge("B", "D");
 
 console.log("BFS starting from vertex A:");
-graph.bfs("A");
+graphs.bfs("A");
 
 // Task 10: Use the Graph class to represent a simple network and perform BFS to find the shortest path between two nodes.
 
