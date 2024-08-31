@@ -124,7 +124,7 @@ const groupingAndCapturingScript = (text) => {
     });
 };
 
-groupingAndCapturingScript("Contact: (123) 456-7890 or email at john.doe@example.com.");
+groupingAndCapturingScript("Contact: (123) 456-7890 or email at aatikahakim90@gmail.com");
 
 
 // 3. Character Classes and Quantifiers Script
