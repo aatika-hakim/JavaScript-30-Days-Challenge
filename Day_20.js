@@ -1,46 +1,23 @@
-//* LocalStorage & SessionStorage
+document.addEventListener('DOMContentLoaded', () => {
+    // Activity 1: Understanding LocalStorage
+    // Task 1: Save and retrieve a string value
+    localStorage.setItem('str', 'Hello');
+    console.log(localStorage.getItem('str'));
 
+    // Task 2: Save and retrieve an object
+    const obj = { name: 'Ali', age: 22 };
+    localStorage.setItem('obj', JSON.stringify(obj));
+    const retrievedObj = JSON.parse(localStorage.getItem('obj'));
+    console.log(retrievedObj);
 
-//* Activity 1: Understanding localStorage
-
-
-// Task 1: Save and Retrieve a String Value
-
-localStorage.setItem('str', 'Hello');
-const str = localStorage.getItem('str');
-console.log(str);
-
-
-// Task 2: Save and Retrieve an Object
-
-const obj = { name: 'Ali', age: 22 };
-localStorage.setItem('obj', JSON.stringify(obj));
-const parsedObj = JSON.parse(localStorage.getItem('obj'));
-console.log(parsedObj);
-
-
-//* Activity 2: Using localStorage
-
-
-// Task 3: Simple Form with localStorage
-
-const form = document.querySelector('form');
-const nameField = document.querySelector('#name');
-const emailField = document.querySelector('#email');
-
-form.addEventListener('submit', () => {
-  localStorage.setItem('name', nameField.value);
-  localStorage.setItem('email', emailField.value);
-});
-
-window.addEventListener('load', () => {
-  nameField.value = localStorage.getItem('name') || '';
-  emailField.value = localStorage.getItem('email') || '';
-});
-
-
-// Task 4: Remove Item from localStorage
-
-console.log(localStorage.getItem('str'));
-localStorage.removeItem('str');
-console.log(localStorage.getItem('str'));
+    // Activity 2: Using LocalStorage
+    // Task 3: Save user input to LocalStorage
+    const form = document.querySelector('#userForm');
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.querySelector('#name').value;
+        const email = document.querySelector('#email').value;
+        const userData = { name, email };
+        localStorage.setItem('user', JSON.stringify(userData));
+        displayData();
+    })
