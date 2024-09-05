@@ -40,3 +40,23 @@ function lengthOfLongestSubstring(s) {
 
 console.log(lengthOfLongestSubstring("abcabcbb")); //  3
 console.log(lengthOfLongestSubstring("bbbbb"));    //  1
+
+
+// 3. Container With Most Water
+function maxArea(height) {
+    let left = 0, right = height.length - 1;
+    let maxArea = 0;
+    while (left < right) {
+        const width = right - left;
+        const minHeight = Math.min(height[left], height[right]);
+        maxArea = Math.max(maxArea, width * minHeight);
+        if (height[left] < height[right]) {
+            left++;
+        } else {
+            right--;
+        }
+    }
+    return maxArea;
+}
+
+console.log(maxArea([1,8,6,2,5,4,8,3,7])); //  49
