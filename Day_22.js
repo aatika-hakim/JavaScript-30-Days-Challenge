@@ -20,3 +20,23 @@ function addTwoNumbers(arr1, arr2) {
 }
 
 console.log(addTwoNumbers([2, 4, 3], [5, 6, 4])); //  [7, 0, 8]
+
+
+// 2. Longest Substring Without Repeating Characters
+function lengthOfLongestSubstring(s) {
+    let charSet = new Set();
+    let maxLength = 0;
+    let left = 0;
+    for (let right = 0; right < s.length; right++) {
+        while (charSet.has(s[right])) {
+            charSet.delete(s[left]);
+            left++;
+        }
+        charSet.add(s[right]);
+        maxLength = Math.max(maxLength, right - left + 1);
+    }
+    return maxLength;
+}
+
+console.log(lengthOfLongestSubstring("abcabcbb")); //  3
+console.log(lengthOfLongestSubstring("bbbbb"));    //  1
